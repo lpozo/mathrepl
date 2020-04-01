@@ -8,8 +8,8 @@
 
 """MathREPL, a math expression evaluator using Python's eval() and math."""
 
-from mathrepl import PS1, USAGE, WELCOME
-from mathrepl.evaluator import evaluate
+from . import PS1, USAGE, WELCOME
+from .evaluator import evaluate
 
 
 def main():
@@ -43,7 +43,3 @@ def main():
 
         # Print the result if no error occurs
         print(f"The result is: {result}")
-
-
-if __name__ == "__main__":
-    main()
