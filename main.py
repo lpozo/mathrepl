@@ -9,7 +9,7 @@
 """MathREPL, a math expression evaluator using Python's eval() and math."""
 
 from mathrepl import PS1, USAGE, WELCOME
-from mathrepl.mathrepl import evaluate
+from mathrepl.evaluator import evaluate
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
             # If the user enters an invalid expression
             print("Invalid input expression syntax")
             continue
-        except NameError as err:
+        except (NameError, ValueError) as err:
             # If the user tries to use a name that isn't allowed
             print(err)
             continue
