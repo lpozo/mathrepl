@@ -8,9 +8,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""This module provides tests."""
+"""This module provides tests for mathrepl.evaluator."""
 
 import math
+
 import pytest
 from pytest import param
 

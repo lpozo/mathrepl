@@ -6,7 +6,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""MathREPL, a math expression evaluator using Python's eval() and math."""
+"""MathREPL, a math expression evaluator using Python eval() and the math module."""
 
 import math
 
