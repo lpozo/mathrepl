@@ -6,7 +6,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""MathREPL, a math expression evaluator using Python's eval() and math."""
+"""MathREPL, a math expression evaluator using Python eval() and the math module."""
 
 from mathrepl import PS1, USAGE, WELCOME
 from mathrepl.evaluator import evaluate
@@ -42,7 +42,7 @@ def main():
             continue
 
         # Print the result if no error occurs
-        print(f"The result is: {result}")
+        print(result)
 
 
 if __name__ == "__main__":
