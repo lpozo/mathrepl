@@ -1,78 +1,71 @@
-# Product Name
-> Short blurb about what your product does.
+# MathREPL
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+MathREPL, a math expression evaluator using Python `eval()` and the `math` module.
 
-One to two paragraph statement about your product and what it does.
-
-![](header.png)
+MathREPL is an attempt to show how to use Python `eval()` to solve real-world problems while minimizing (but not removing) its security issues. So, the most important piece of code in this application is the function `evaluate()` which lives in the `evaluator` module.
 
 ## Installation
 
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
+1. Clone the repo (`git clone https://github.com/lpozo/mathrepl.git`)
+2. `cd` into the directory of the repo (`cd mathrepl`)
+3. Run the main script (`python3 main.py`)
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+The steps in the previous section will preset you with a prompt like this:
 
 ```sh
-make install
-npm test
+MathREPL 1.0, your Python math expressions evaluator!
+Enter a valid math expression after the prompt "mr>>".
+Type "help" for more information.
+Type "quit" or "exit" to exit.
+
+mr>>
+```
+
+At `mr>>` type any math expression that follows Python syntax and uses the functionalities defined in the Python `math` module. For example:
+
+```sh
+mr>> (5 + 7) / 2
+6.0
+mr>> sqrt(pow(10, 2) + pow(15, 2))
+18.027756377319946
+mr>>
 ```
 
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+- **Version 1.0**
+  - Include basic functionalities to evaluate math-related expressions with Python `eval()` function and the `math` module.
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+1. Fork MathREPL from (<https://github.com/lpozo/mathrepl/fork>)
+2. Clone your fork locally (`git clone https://github.com/your_user_name/mathrepl.git`)
+3. Create your feature branch (`git checkout -b feature_awesome_feature`)
+4. Commit your changes (`git commit -am 'Add some awesome feature'`)
+5. Push to the branch (`git push -u origin feature_awesome_feature`)
+6. Create a new Pull Request against the `develop` branch of MathREPL
+7. Wait for code review and feedback
 
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+## Running the tests
+
+You can run the tests for MathREPL using `pytest`. To do this, just open a command-line in MathREPL's root directory and run the following command:
+
+```sh
+$ pytest -v tests
+```
+
+You might need to include the current directory (`.`) in your Python path (`PYTHONPATH`) for this to work. A fast way to do that is by typing the following command in your command-line:
+
+```sh
+$ export PYTHONPATH="$PYTHONPATH:."
+```
+
+## Author
+
+Leodanis Pozo Ramos – Twitter: [@lpozo78](https://twitter.com/lpozo78) – E-mail: lpozor78@gmail.com
+
+## License
+
+MathREPL is distributed under the MIT license. See [LICENSE](https://github.com/lpozo/mathrepl) for more information.
