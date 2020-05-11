@@ -4,6 +4,10 @@ MathREPL, a math expression evaluator using Python `eval()` and the `math` modul
 
 MathREPL is an attempt to show how to use Python `eval()` to solve real-world problems while minimizing (but not removing) its security issues. So, the most important piece of code in this application is the function `evaluate()` which lives in the `evaluator` module.
 
+MathREPL is a sample project based on the example I used in my [Real Python](https://realpython.com/) tutorial: [Python eval(): Evaluate Expressions Dynamically](https://realpython.com/python-eval-function/).
+
+![Real Python Tutorial](real-python-image.jpeg)
+
 ## Installation
 
 1. Clone the repo (`git clone https://github.com/lpozo/mathrepl.git`)
